@@ -50,8 +50,63 @@
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
                 <button data-modal-open class="hero-button" type="button">Заказать услугу</button>               
             </div>
-            <div class="backdrop is-hidden" data-modal>
+
+        <!-- Modal -->
+
+            <div class="backdrop " data-modal>
+                <!-- is-hidden -->
                 <div class="modal">
+                    <h2 class="modal-head">Оставьте свои данные, мы вам перезвоним</h2>
+                    <form autocomplete="off" class="modal-form">
+                        <ul class="list user-data">
+                            <li class="modal-items">
+                                <label class="modal-label" for="username">Имя</label>
+                                <input 
+                                type="text" 
+                                class="modal-inp" 
+                                name="user-name" 
+                                id="username"
+                                placeholder=" " 
+                                autofocus
+                                >
+                            </li>
+                            <li class="modal-items">
+                                <label class="modal-label" for="tel">Телефон</label>
+                                <input 
+                                type="tel" 
+                                class="modal-inp" 
+                                name="tel" 
+                                id="tel"
+                                placeholder=" "
+                                >
+                            </li>
+                            <li class="modal-items">
+                                <label class="modal-label" for="email">Почта</label>
+                                <input 
+                                type="email" 
+                                class="modal-inp" 
+                                name="email" 
+                                id="email"
+                                placeholder=" "
+                                >
+                            </li>
+                            <li class="modal-items">
+                                <label class="modal-label">Комментарий</label>
+                                <textarea
+                                name="comment"
+                                class="comment"
+                                placeholder="Введите текст"
+                                ></textarea>
+                            </li>
+                        </ul>   
+                        <label class="modal-label dogovor"> 
+                            <input type="checkbox" class="" name="agry"> 
+                            Соглашаюсь с рассылкой и принимаю
+                            <a class="dogovor" href="">Условия договора</a>
+                        </label>
+                        
+                        <button type="submit" class="hero-button">Отправить</button>
+                    </form>
                     <button data-modal-close class="btn-close" type="button">
                         <svg>
                             <use href="./images/icons.svg#icon-close-svg"></use>
@@ -418,9 +473,9 @@
             </div>
             <div>
                 <p>Подпишитесь на рассылку</p>
-                <form>
+                <form class="footer-form">
                     <label class="label-foot">
-                        <input type="email" placeholder="E-mail"/>
+                        <input name="pidpuska" type="email" placeholder="E-mail"/>
                     </label>
                     <button type="submit" class="hero-button">Подписаться
                         <span class="send-icon-cont">

@@ -306,6 +306,7 @@ img {
   height: 581px;
   top: 50%;
   left: 50%;
+  padding: 40px;
   transform: translate(-50%, -50%) scale(1);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -326,6 +327,79 @@ img {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+
+.modal-head {
+  margin-bottom: 12px;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+
+.modal-form {
+  display: block;
+}
+
+.modal-form>.hero-button {
+  display: block;
+  margin: 0 auto;
+}
+
+.user-data {
+  margin-bottom: 20px;
+}
+
+.modal-items:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.modal-label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+
+.modal-inp {
+  display: block;
+  height: 40px;
+  width: 100%;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+
+.comment {
+  display: block;
+  width: 100%;
+  height: 120px;
+  resize: none;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.comment:placeholder-shown {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.dogovor {
+  margin-bottom: 30px;
+}
+
+.dogovor > a {
+  text-decoration-line: underline;
+  color: #2196F3;
 }
 
 /*quality*/
@@ -760,7 +834,7 @@ border-radius: 4px;
   color: rgba(255, 255, 255, 0.6);
 }
 
-form .hero-button {
+.footer-form .hero-button {
   box-sizing: border-box;
   position: relative;
   padding-right: 62px;
