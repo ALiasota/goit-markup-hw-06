@@ -53,62 +53,76 @@
 
         <!-- Modal -->
 
-            <div class="backdrop " data-modal>
-                <!-- is-hidden -->
+            <div class="backdrop is-hidden" data-modal>                
                 <div class="modal">
                     <h2 class="modal-head">Оставьте свои данные, мы вам перезвоним</h2>
-                    <form autocomplete="off" class="modal-form">
-                        <ul class="list user-data">
-                            <li class="modal-items">
-                                <label class="modal-label" for="username">Имя</label>
-                                <input 
+                    <form autocomplete="off" class="modal-form">                        
+                                <label class="modal-label">Имя
+                                    <span class="modal-svg-cont">
+                                        <svg class="modal-svg">
+                                            <use href="./images/icons.svg#icon-name-svg"></use>
+                                        </svg>
+                                    </span>
+                                    <input 
                                 type="text" 
-                                class="modal-inp" 
-                                name="user-name" 
-                                id="username"
+                                class="modal-inp modal-border" 
+                                name="user-name"                                 
                                 placeholder=" " 
                                 autofocus
-                                >
-                            </li>
-                            <li class="modal-items">
-                                <label class="modal-label" for="tel">Телефон</label>
-                                <input 
+                                >               
+                                </label>
+                                                
+                            
+                                <label class="modal-label">Телефон
+                                    <span class="modal-svg-cont">
+                                        <svg class="modal-svg">
+                                            <use href="./images/icons.svg#icon-tel-svg"></use>
+                                        </svg>
+                                    </span>
+                                     <input 
                                 type="tel" 
-                                class="modal-inp" 
-                                name="tel" 
-                                id="tel"
+                                class="modal-inp modal-border" 
+                                name="tel"                                 
                                 placeholder=" "
                                 >
-                            </li>
-                            <li class="modal-items">
-                                <label class="modal-label" for="email">Почта</label>
-                                <input 
+                                </label>
+                               
+                            
+                                <label class="modal-label">Почта
+                                    <span class="modal-svg-cont">
+                                        <svg class="modal-svg">
+                                            <use href="./images/icons.svg#icon-mail-svg"></use>
+                                        </svg>
+                                    </span>
+                                    <input 
                                 type="email" 
-                                class="modal-inp" 
-                                name="email" 
-                                id="email"
+                                class="modal-inp modal-border" 
+                                name="email"                                 
                                 placeholder=" "
                                 >
-                            </li>
-                            <li class="modal-items">
-                                <label class="modal-label">Комментарий</label>
-                                <textarea
+                                </label>
+                                
+                            
+                                <label class="modal-label">Комментарий
+                                    <textarea
                                 name="comment"
-                                class="comment"
+                                class="comment modal-border"
                                 placeholder="Введите текст"
                                 ></textarea>
-                            </li>
-                        </ul>   
-                        <label class="modal-label dogovor"> 
-                            <input type="checkbox" class="" name="agry"> 
-                            Соглашаюсь с рассылкой и принимаю
-                            <a class="dogovor" href="">Условия договора</a>
+                                </label>
+                                
+                          
+                        <label class="dogovor"> 
+                            <input type="checkbox" class="checkbox" name="agry">
+                            <span class="checkbox-icon"></span> 
+                            <span>Соглашаюсь с рассылкой и принимаю</span>
+                            <a href="">Условия договора</a>
                         </label>
                         
                         <button type="submit" class="hero-button">Отправить</button>
                     </form>
                     <button data-modal-close class="btn-close" type="button">
-                        <svg>
+                        <svg class="close-svg">
                             <use href="./images/icons.svg#icon-close-svg"></use>
                         </svg>
                     </button>
