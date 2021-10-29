@@ -332,6 +332,13 @@ img {
 .close-svg {
   width: 30px;
   height: 30px;
+  fill: #000000;
+  transition: fill 250ms var(--animation-funct);
+}
+
+.btn-close:hover > .close-svg,
+.btn-close:focus > .close-svg {
+  fill: var(--accent-color);
 }
 
 .modal-head {
@@ -351,6 +358,7 @@ img {
 .modal-form>.hero-button {
   display: block;
   margin: 0 auto;
+  padding: 10px 56px;
 }
 
 
@@ -434,7 +442,7 @@ img {
   position: relative;
   left: 13px;
   top: 0;
-  padding-left: 24px;
+  padding-left: 26px;
 }
 
 .dogovor > a {
@@ -462,7 +470,7 @@ img {
 .checkbox-icon {
   position: absolute;
   display: block;
-  width: 15px;
+  width: 16px;
   height: 15px;
   left: 0;
   top: 4px;
@@ -473,7 +481,7 @@ img {
 
 .checkbox:checked + .checkbox-icon {
   border-color: transparent;
-  transform: scale(1.1);
+  transform: scale(1);
   background: #2196F3;
   background-image: url('../images/check-svg.svg');
   background-origin: border-box;
@@ -654,15 +662,14 @@ img {
 
 .clients {
   display: flex;
+  margin-right: -30px;
 }
 
 .clients-item {
   flex-basis: calc(100% / 6 - 30px);
-}
-
-.clients-item:not(:last-child) {
   margin-right: 30px;
 }
+
 
 .client-link {
   border: 1px solid #afb1b8;
@@ -672,7 +679,7 @@ img {
   justify-content: center;
   align-items: center;    
 }
-.client-svg {
+.client-svg {  
   width: 106px;
   height: 92px;
   fill: #afb1b8;
@@ -683,8 +690,6 @@ img {
 .client-link:hover>.client-svg {
   fill: var(--accent-color);  
 }
-
-
 
 
 
