@@ -375,10 +375,9 @@ img {
   margin-bottom: 10px;
 }
 
-.modal-label:last-child {
+.lb-comment.modal-label {
   margin-bottom: 20px;
 }
-
 .modal-inp {
   display: block;
   height: 40px;
